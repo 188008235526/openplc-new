@@ -1,0 +1,199 @@
+Installing OpenPLC on Linux
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+Hit:3 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:4 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+autoconf is already the newest version (2.69-11.1).
+automake is already the newest version (1:1.16.1-4ubuntu6).
+bison is already the newest version (2:3.5.1+dfsg-1).
+flex is already the newest version (2.6.4-6.2).
+libtool is already the newest version (2.4.6-14).
+make is already the newest version (4.2.1-1.2).
+pkg-config is already the newest version (0.29.1-0ubuntu4).
+build-essential is already the newest version (12.8ubuntu1.1).
+cmake is already the newest version (3.16.3-1ubuntu1.20.04.1).
+curl is already the newest version (7.68.0-1ubuntu2.25).
+git is already the newest version (1:2.25.1-1ubuntu3.13).
+sqlite3 is already the newest version (3.31.1-4ubuntu0.6).
+python2.7 is already the newest version (2.7.18-1~20.04.7).
+0 upgraded, 0 newly installed, 0 to remove and 344 not upgraded.
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 27 2246k   27  619k    0     0   209k      0  0:00:10  0:00:02  0:00:08  209k 51 2246k   51 1147k    0     0   289k      0  0:00:07  0:00:03  0:00:04  289k 64 2246k   64 1455k    0     0   292k      0  0:00:07  0:00:04  0:00:03  292k 77 2246k   77 1737k    0     0   288k      0  0:00:07  0:00:06  0:00:01  346k 83 2246k   83 1865k    0     0   267k      0  0:00:08  0:00:06  0:00:02  373k 88 2246k   88 1987k    0     0   249k      0  0:00:09  0:00:07  0:00:02  272k 93 2246k   93 2099k    0     0   234k      0  0:00:09  0:00:08  0:00:01  190k100 2246k  100 2246k    0     0   227k      0  0:00:09  0:00:09 --:--:--  160k
+ERROR: This script does not work on Python 2.7. The minimum supported Python version is 3.8. Please use https://bootstrap.pypa.io/pip/2.7/get-pip.py instead.
+./background_installer.sh: line 33: pip2: command not found
+./background_installer.sh: line 34: pip2: command not found
+./background_installer.sh: line 35: pip2: command not found
+./background_installer.sh: line 36: pip2: command not found
+sudo: pip2: command not found
+sudo: pip2: command not found
+sudo: pip2: command not found
+sudo: pip2: command not found
+
+[MATIEC COMPILER]
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/config/missing: Unknown `--is-lightweight' option
+Try `/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/config/missing --help' for more information
+configure: WARNING: 'missing' script is too old or missing
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for bison... bison -y
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for ranlib... ranlib
+checking for gawk... (cached) mawk
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking for unistd.h... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for inline... inline
+checking for int16_t... yes
+checking for int32_t... yes
+checking for int64_t... yes
+checking for int8_t... yes
+checking for uint16_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for uint8_t... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for alarm... yes
+checking for working mktime... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for clock_gettime... yes
+checking for memset... yes
+checking for pow... no
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for strtoull... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating absyntax/Makefile
+config.status: creating absyntax_utils/Makefile
+config.status: creating stage1_2/Makefile
+config.status: creating stage3/Makefile
+config.status: creating stage4/Makefile
+config.status: creating stage4/generate_c/Makefile
+config.status: creating stage4/generate_iec/Makefile
+config.status: creating config/config.h
+config.status: config/config.h is unchanged
+config.status: executing depfiles commands
+Making all in absyntax
+make[1]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/absyntax'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/absyntax'
+Making all in absyntax_utils
+make[1]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/absyntax_utils'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/absyntax_utils'
+Making all in stage1_2
+make[1]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage1_2'
+make  all-am
+make[2]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage1_2'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage1_2'
+make[1]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage1_2'
+Making all in stage3
+make[1]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage3'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage3'
+Making all in stage4
+make[1]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4'
+Making all in generate_c
+make[2]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4/generate_c'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4/generate_c'
+Making all in generate_iec
+make[2]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4/generate_iec'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4/generate_iec'
+make[2]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4'
+make[1]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src/stage4'
+make[1]: Entering directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src'
+make[1]: Leaving directory '/home/ubuntu/work/OpenPLC_v3/utils/matiec_src'
+
+[ST OPTIMIZER]
+
+[GLUE GENERATOR]
+
+[OPEN DNP3]
+creating swapfile...
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 2.16285 s, 485 MB/s
+mkswap: swapfile: insecure permissions 0644, 0600 suggested.
+Setting up swapspace version 1, size = 1000 MiB (1048571904 bytes)
+no label, UUID=57f6aba8-d8ec-4339-8532-810c4711db83
+swapon: /home/ubuntu/work/OpenPLC_v3/utils/dnp3_src/swapfile: insecure permissions 0644, 0600 suggested.
+CMake Error: The current CMakeCache.txt directory /home/ubuntu/work/OpenPLC_v3/utils/dnp3_src/CMakeCache.txt is different than the directory /home/ubuntu/work/OpenPLC_v3-master/utils/dnp3_src where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+/bin/sh: 1: cd: can't cd to /home/ubuntu/work/OpenPLC_v3-master/utils/dnp3_src
+make[2]: *** [CMakeFiles/openpal.dir/build.make:336: CMakeFiles/openpal.dir/depend] Error 2
+make[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/openpal.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2
+/bin/sh: 1: cd: can't cd to /home/ubuntu/work/OpenPLC_v3-master/utils/dnp3_src
+make[2]: *** [CMakeFiles/openpal.dir/build.make:336: CMakeFiles/openpal.dir/depend] Error 2
+make[1]: *** [CMakeFiles/Makefile2:192: CMakeFiles/openpal.dir/all] Error 2
+make: *** [Makefile:130: all] Error 2
+Error installing OpenDNP3
+OpenPLC was NOT installed!
